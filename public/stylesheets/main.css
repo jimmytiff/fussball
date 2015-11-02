@@ -1,0 +1,61 @@
+body{
+  background: green;
+}
+.navbar-default {
+    background-color: green;
+    border-color: green;
+}
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: green;
+    border-color: #000;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: #000;
+}
+.jumbotron {
+  background: darkgreen;
+  color: white;
+  padding-bottom: 80px; 
+}
+.jumbotron .btn-primary {
+    background: #845ac7;
+    border-color: #845ac7; 
+}
+.jumbotron .btn-primary:hover {
+      background: #7646c1; }
+
+.jumbotron p {
+    color: #000;
+    max-width: 75%;
+    margin: 1em auto 2em;
+  }
+.navbar + .jumbotron {
+    margin-top: -20px;
+}
+.jumbotron .lang-logo {
+    display: block;
+    background: #B01302;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border: 2px solid white; 
+}
+.jumbotron .lang-logo img {
+      max-width: 100%;
+}
+.league_table {
+      color: white;
+}
+

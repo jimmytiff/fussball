@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+  <% include ../partials/nav.ejs %>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1>Give me league table!</h1>
+  </div>
+</div>
+<div class="leaguetable">
+  <div class="container">
+    <table class="league_table">
+    <tbody>
+        <tr>
+            <td>No</td>
+            <td>Team</td>
+            <td>W</td>
+            <td>D</td>
+            <td>L</td>
+            <td>GF</td>
+            <td>GA</td>
+            <td>P</td>
+        </tr>
+    <tr class="droppable">
+        <td id="team_1_position">{{league.position}}</td>
+        <td id="team_1_name">{{league.team_name}}</td>
+        <td id="team_1_win">{{league.win}}</td>
+        <td id="team_1_draw">{{league.draw}}</td>
+        <td id="team_1_lost">{{league.lost}}</td>
+        <td id="team_1_goal_for">{{league.goals_for}}</td>
+        <td id="team_1_goal_against">{{league.goals_against}}</td>
+        <td id="team_1_point">{{league.point}}</td>
+    </tr>
+    <tr class="droppable">
+        <td id="team_2_position"></td>
+        <td id="team_2_name"></td>
+        <td id="team_2_win"></td>
+        <td id="team_2_draw"></td>
+        <td id="team_2_lost"></td>
+        <td id="team_2_goal_for"></td>
+        <td id="team_2_goal_against"></td>
+        <td id="team_2_point"></td>                
+    </tr>
+    <tr class="droppable">
+        <td id="team_3_position"></td>
+        <td id="team_3_name"></td>
+        <td id="team_3_win"></td>
+        <td id="team_3_draw"></td>
+        <td id="team_3_lost"></td>
+        <td id="team_3_goal_for"></td>
+        <td id="team_3_goal_against"></td>
+        <td id="team_3_point"></td>
+    </tr>
+    <tr class="droppable">
+        <td id="team_4_position"></td>
+        <td id="team_4_name"></td>
+        <td id="team_4_win"></td>
+        <td id="team_4_draw"></td>
+        <td id="team_4_lost"></td>
+        <td id="team_4_goal_for"></td>
+        <td id="team_4_goal_against"></td>
+        <td id="team_4_point"></td>
+    </tr>
+    <tr class="droppable">
+        <td id="team_5_position"></td>
+        <td id="team_5_name"></td>
+        <td id="team_5_win"></td>
+        <td id="team_5_draw"></td>
+        <td id="team_5_lost"></td>
+        <td id="team_5_goal_for"></td>
+        <td id="team_5_goal_against"></td>
+        <td id="team_5_point"></td>
+    </tr>
+    <tr class="droppable">
+        <td id="team_6_position"></td>
+        <td id="team_6_name"></td>
+        <td id="team_6_win"></td>
+        <td id="team_6_draw"></td>
+        <td id="team_6_lost"></td>
+        <td id="team_6_goal_for"></td>
+        <td id="team_6_goal_against"></td>
+        <td id="team_6_point"></td>
+    </tr>
+    <tr class="droppable">
+        <td id="team_7_position"></td>
+        <td id="team_7_name"></td>
+        <td id="team_7_win"></td>
+        <td id="team_7_draw"></td>
+        <td id="team_7_lost"></td>
+        <td id="team_7_goal_for"></td>
+        <td id="team_7_goal_against"></td>
+        <td id="team_7_point"></td>
+    </tr>
+    <tr class="droppable">
+        <td id="team_8_position"></td>
+        <td id="team_8_name"></td>
+        <td id="team_8_win"></td>
+        <td id="team_8_draw"></td>
+        <td id="team_8_lost"></td>
+        <td id="team_8_goal_for"></td>
+        <td id="team_8_goal_against"></td>
+        <td id="team_8_point"></td>
+    </tr>
+    <tr class="droppable">
+        <td id="team_9_position"></td>
+        <td id="team_9_name"></td>
+        <td id="team_9_win"></td>
+        <td id="team_9_draw"></td>
+        <td id="team_9_lost"></td>
+        <td id="team_9_goal_for"></td>
+        <td id="team_9_goal_against"></td>
+        <td id="team_9_point"></td>
+    </tr>
+    <tr class="droppable">
+        <td id="team_10_position"></td>
+        <td id="team_10_name"></td>
+        <td id="team_10_win"></td>
+        <td id="team_10_draw"></td>
+        <td id="team_10_lost"></td>
+        <td id="team_10_goal_for"></td>
+        <td id="team_10_goal_against"></td>
+        <td id="team_10_point"></td>
+    </tr>
+    <tr class="droppable">
+        <td id="team_11_position"></td>
+        <td id="team_11_name"></td>
+        <td id="team_11_win"></td>
+        <td id="team_11_draw"></td>
+        <td id="team_11_lost"></td>
+        <td id="team_11_goal_for"></td>
+        <td id="team_11_goal_against"></td>
+        <td id="team_11_point"></td>
+    </tr>
+    <tr class="droppable">
+        <td id="team_12_position"></td>
+        <td id="team_12_name"></td>
+        <td id="team_12_win"></td>
+        <td id="team_12_draw"></td>
+        <td id="team_12_lost"></td>
+        <td id="team_12_goal_for"></td>
+        <td id="team_12_goal_against"></td>
+        <td id="team_12_point"></td>
+    </tr>
+        <tr class="droppable">
+        <td id="team_13_position"></td>
+        <td id="team_13_name"></td>
+        <td id="team_13_win"></td>
+        <td id="team_13_draw"></td>
+        <td id="team_13_lost"></td>
+        <td id="team_13_goal_for"></td>
+        <td id="team_13_goal_against"></td>
+        <td id="team_13_point"></td>
+    </tr>
+        <tr class="droppable">
+        <td id="team_14_position"></td>
+        <td id="team_14_name"></td>
+        <td id="team_14_win"></td>
+        <td id="team_14_draw"></td>
+        <td id="team_14_lost"></td>
+        <td id="team_14_goal_for"></td>
+        <td id="team_14_goal_against"></td>
+        <td id="team_14_point"></td>
+    </tr>
+        <tr class="droppable">
+        <td id="team_15_position"></td>
+        <td id="team_15_name"></td>
+        <td id="team_15_win"></td>
+        <td id="team_15_draw"></td>
+        <td id="team_15_lost"></td>
+        <td id="team_15_goal_for"></td>
+        <td id="team_15_goal_against"></td>
+        <td id="team_15_point"></td>
+    </tr>
+        <tr class="droppable">
+        <td id="team_16_position"></td>
+        <td id="team_16_name"></td>
+        <td id="team_16_win"></td>
+        <td id="team_16_draw"></td>
+        <td id="team_16_lost"></td>
+        <td id="team_16_goal_for"></td>
+        <td id="team_16_goal_against"></td>
+        <td id="team_16_point"></td>
+    </tr>
+        <tr class="droppable">
+        <td id="team_17_position"></td>
+        <td id="team_17_name"></td>
+        <td id="team_17_win"></td>
+        <td id="team_17_draw"></td>
+        <td id="team_17_lost"></td>
+        <td id="team_17_goal_for"></td>
+        <td id="team_17_goal_against"></td>
+        <td id="team_17_point"></td>
+    </tr>
+        <tr class="droppable">
+        <td id="team_18_position"></td>
+        <td id="team_18_name"></td>
+        <td id="team_18_win"></td>
+        <td id="team_18_draw"></td>
+        <td id="team_18_lost"></td>
+        <td id="team_18_goal_for"></td>
+        <td id="team_18_goal_against"></td>
+        <td id="team_18_point"></td>
+    </tr>
+        <tr class="droppable">
+        <td id="team_19_position"></td>
+        <td id="team_19_name"></td>
+        <td id="team_19_win"></td>
+        <td id="team_19_draw"></td>
+        <td id="team_19_lost"></td>
+        <td id="team_19_goal_for"></td>
+        <td id="team_19_goal_against"></td>
+        <td id="team_19_point"></td>
+    </tr>
+        <tr class="droppable">
+        <td id="team_20_position"></td>
+        <td id="team_20_name"></td>
+        <td id="team_20_win"></td>
+        <td id="team_20_draw"></td>
+        <td id="team_20_lost"></td>
+        <td id="team_20_goal_for"></td>
+        <td id="team_20_goal_against"></td>
+        <td id="team_20_point"></td>
+    </tr>
+    </tbody>
+</table>
+  </div>
+</div>
+
+</body>
+</html>
